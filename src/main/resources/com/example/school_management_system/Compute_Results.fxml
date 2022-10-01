@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="393.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.school_management_system.HelloController">
+   <children>
+      <ImageView fitHeight="393.0" fitWidth="666.0" pickOnBounds="true">
+         <image>
+            <Image url="@abstract-background-with-geometric-shapes-vector-33185500.jpg" />
+         </image></ImageView>
+      <Pane layoutX="79.0" layoutY="23.0" opacity="0.75" prefHeight="332.0" prefWidth="518.0" style="-fx-border-color: white; -fx-background-color: #08174d; -fx-border-width: 4;">
+         <children>
+            <TextField fx:id="txtScore_1" layoutX="59.0" layoutY="86.0" prefHeight="32.0" prefWidth="175.0" promptText="Enter Score" style="-fx-background-color: transparent; -fx-border-color: white; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 3;" />
+            <TextField fx:id="txtScore_2" layoutX="293.0" layoutY="86.0" prefHeight="32.0" prefWidth="175.0" promptText="Enter Score " style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 10; -fx-border-width: 3;" />
+            <ChoiceBox fx:id="chComputeOp" layoutX="53.0" layoutY="155.0" prefHeight="32.0" prefWidth="196.0" style="-fx-background-color: #e1a10b;" />
+            <Button fx:id="btnCompute" layoutX="283.0" layoutY="154.0" mnemonicParsing="false" onAction="#On_Compute" prefHeight="32.0" prefWidth="196.0" style="-fx-background-color: #e1a10b;" text="Compute" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Button>
+            <Label layoutX="161.0" layoutY="264.0" prefHeight="40.0" prefWidth="206.0" textFill="#f2c329" />
+            <Label layoutX="80.0" layoutY="218.0" prefHeight="32.0" prefWidth="74.0" text="Results:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labDisplay" layoutX="161.0" layoutY="215.0" prefHeight="40.0" prefWidth="206.0" style="-fx-border-radius: 10; -fx-border-width: 3;">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <Label alignment="CENTER" layoutX="157.0" layoutY="12.0" prefHeight="40.0" prefWidth="214.0" style="-fx-background-color: #e1a10b; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: white; -fx-border-width: 3;" text="Compute Results" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="labDisplay_2" layoutX="165.0" layoutY="271.0" prefHeight="40.0" prefWidth="196.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="80.0" layoutY="273.0" prefHeight="32.0" prefWidth="81.0" text="Remarks:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="31.0" layoutX="165.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ratings_60px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
